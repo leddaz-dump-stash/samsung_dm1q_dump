@@ -1,0 +1,52 @@
+user=_app seinfo=platform name=com.samsung.android.app.kfa domain=kfa_app type=app_data_file
+user=system seinfo=platform name=com.samsung.aasaservice domain=aasa_service_app type=aasa_service_app_data_file levelFrom=user
+user=_app seinfo=filtered_untrusted name=com.att.firstnet.grey* domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.ucm.baiplugin domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.sec.smartcard.manager domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=sec_untrusted name=com.sec.android.service.singlesignon domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.android.oneconnect* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=samsung name=com.samsung.android.voicewakeup domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=platform name=com.samsung.sdm.sdmviewer domain=platform_app type=app_data_file
+user=_app seinfo=sec_untrusted name=com.sds.stsm.esetest domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=release name=com.sec.android.app.shealth* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=shealth name=com.sec.android.app.shealth* domain=sec_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=filtered_untrusted name=com.expway.embmsserver* domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=filtered_untrusted name=com.jio.emiddleware domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=Reliance_Jio domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=trusted_dmb name=com.omnitel* domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=rjio domain=filtered_untrusted_app type=app_data_file levelFrom=user
+user=system seinfo=default domain=untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=vzw_untrusted domain=vzwfiltered_untrusted_app type=app_data_file levelFrom=user
+user=_app seinfo=xcal_untrusted domain=vzwfiltered_untrusted_app type=app_data_file levelFrom=user
+user=vendor_spay seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=spay seinfo=platform domain=platform_app type=app_data_file levelFrom=user
+user=oneseg domain=oneseg_apk type=app_data_file levelFrom=user
+user=_app seinfo=aasa_platform domain=aasa_platform_app type=app_data_file levelFrom=user
+user=oem_5500 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5501 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5502 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5503 domain=felica_app type=app_data_file levelFrom=user
+user=oem_5504 domain=felica_app type=app_data_file
+user=vendor_felicalock domain=felica_app type=app_data_file levelFrom=user
+user=network_stack seinfo=platform domain=network_stack type=radio_data_file
+user=radio seinfo=platform name=.dataservices domain=vendor_dataservice_app type=radio_data_file
+user=_app seinfo=platform name=com.qualcomm.telephony domain=radio_service type=app_data_file levelFrom=all
+user=_app seinfo=platform name=org.codeaurora.ims isPrivApp=true domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.telephonyservice domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.location.XT isPrivApp=true domain=vendor_location_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.location.XT.setup isPrivApp=true domain=vendor_location_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.location isPrivApp=true domain=vendor_location_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.wfd.service:wfd_service domain=vendor_wfd_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.wfd.client domain=vendor_wfd_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qti.qcc domain=vendor_qcc_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.qti.qcclmtp isPrivApp=true domain=vendor_qcc_lmtp_app type=system_app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.qccnetstat domain=vendor_qcc_netstat_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=com.qualcomm.qti.qdmautils isPrivApp=true domain=vendor_qcc_utils_app type=system_app_data_file
+user=_app seinfo=platform name=com.caf.fmradio domain=vendor_fm_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.seccamservice:remote domain=vendor_seccam_app type=app_data_file
+user=_app seinfo=platform name=com.qti.phone domain=vendor_qtelephony type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.sva domain=vendor_voiceui_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qti.qualcomm.mstatssystemservice domain=vendor_mstatservice_app type=app_data_file levelFrom=all
+user=system seinfo=platform name=vendor.qti.qesdk.sysservice isPrivApp=true domain=vendor_qesdk_app type=system_app_data_file
+user=_app seinfo=platform name=com.qualcomm.qti.workloadclassifier domain=vendor_wlc_app type=app_data_file levelFrom=all
+user=_app seinfo=platform name=com.qualcomm.qti.xrcb domain=vendor_xrcb_app type=app_data_file levelFrom=all
