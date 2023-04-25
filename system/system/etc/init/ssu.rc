@@ -1,0 +1,69 @@
+# SSU (Samsung SIM Unlock)
+
+on post-fs-data
+    mkdir /efs/mb_po 0700 system system
+
+on property:ssu.support=0
+    stop ssud
+
+on property:ssu.support=1
+    setprop ssu.status default
+    setprop ssu.count 30
+    setprop ssu.error 0
+
+on property:ssu.count=0
+    stop ssud
+
+# for LPM (Low power mode)
+on property:ro.bootmode=charger
+    stop ssud
+    setprop ssu.support 0
+
+on property:ro.factory.factory_binary=factory
+    stop ssud
+    setprop ssu.support 0
+
+# SSU_ERR_NOT_CONFIG_AID
+on property:ssu.error=0x91 && property:ro.boot.carrierid=MXO
+    stop ssud
+
+# SSU_ERR_UNKNOWN_CID
+on property:ssu.error=0x51
+    stop ssud
+
+# SSU_ERR_DRK_NON_EXIST
+on property:ssu.error=0xf
+    stop ssud
+
+# SSU_ERR_CERT_AS
+on property:ssu.error=0x8d
+    stop ssud
+
+# SSU_ERR_BLOB_MISSED
+on property:ssu.error=0x8e
+    stop ssud
+
+# SSU_ERR_IMEI
+on property:ssu.error=0x8f
+    stop ssud
+
+# SSU_ERR_TEE_COMM
+on property:ssu.error=0x93
+    stop ssud
+
+# qsee daemon
+on property:ssu.support=1 && property:vendor.sys.qseecomd.enable=true && property:ril.halservice.registered.slot1=true && property:ssu.error=0
+    start ssud
+
+# teegris daemon
+on property:ssu.support=1 && property:vendor.tzdaemon=Ready && property:ril.halservice.registered.slot1=true && property:ssu.error=0
+    start ssud
+
+# kinibi daemon
+on property:ssu.support=1 && property:vendor.sys.mobicoredaemon.enable=true && property:ril.halservice.registered.slot1=true && property:ssu.error=0
+    start ssud
+
+service ssud /system/bin/ssud
+    user system
+    group system inet
+    disabled

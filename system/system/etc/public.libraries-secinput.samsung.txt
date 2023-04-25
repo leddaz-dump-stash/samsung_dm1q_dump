@@ -1,0 +1,2 @@
+libtflite_jni.secinput.samsung.so
+

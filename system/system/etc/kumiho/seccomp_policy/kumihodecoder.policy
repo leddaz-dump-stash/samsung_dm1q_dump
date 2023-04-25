@@ -1,0 +1,29 @@
+# TODO: Organize by frequency of systemcall in descending order for
+# best performance.
+ioctl: 1
+prctl: 1
+write: 1
+getpriority: 1
+close: 1
+mmap: 1
+munmap: 1
+openat: 1
+mprotect: 1
+madvise: 1
+getuid: 1
+gettid: 1
+fstat: 1
+read: 1
+setpriority: 1
+sigaltstack: 1
+clone: 1
+faccessat: 1
+getrlimit: 1
+rt_sigprocmask: 1
+futex: 1
+
+# Add to be able to use Media Extractor for HEIC/HEIF format
+set_tid_address: 1
+exit: 1
+
+@include /apex/com.android.media/etc/seccomp_policy/crash_dump.arm64.policy

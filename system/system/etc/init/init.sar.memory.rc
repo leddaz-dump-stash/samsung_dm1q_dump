@@ -1,0 +1,4 @@
+
+on property:sys.sysctl.swappiness=*
+    write /proc/sys/vm/swappiness ${sys.sysctl.swappiness}
+

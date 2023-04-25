@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<VERSION value="20221213"/>
+<ADP version="2.0">
+    <HASHVALUE name="1b678c80fc9940d60d4ad7b3dd41ef886e196bb633c75611a5d94e1c63fab0bf">
+        <pattern value="^\d{9}\z">
+            <hashCode value="310200015"/>
+            <versionType value="5"/>
+        </pattern>
+    </HASHVALUE>
+</ADP>

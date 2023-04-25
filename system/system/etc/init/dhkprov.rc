@@ -1,0 +1,25 @@
+on post-fs-data
+    # ted
+    mkdir /efs/cpk 0771 radio system
+    chmod 0640 /efs/cpk/ted1dat.bin
+    chmod 0640 /efs/cpk/ted2dat.bin
+
+# dp hdcp 1x
+service dhkprov1x /system/bin/dhkprov insthkey 1x
+    class core
+    user system
+    group system
+    disabled
+    oneshot
+
+# dp hdcp 2x
+service dhkprov2x /system/bin/dhkprov insthkey 2x
+    class core
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:vendor.sys.qseecomd.enable=true
+    start dhkprov1x
+    start dhkprov2x

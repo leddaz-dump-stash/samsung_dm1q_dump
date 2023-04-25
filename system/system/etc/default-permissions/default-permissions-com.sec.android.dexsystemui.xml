@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<exceptions>
+
+    <exception package="com.sec.android.dexsystemui">
+        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="true" />
+        <permission name="android.permission.READ_MEDIA_IMAGES" fixed="true" />
+    </exception>
+
+</exceptions>

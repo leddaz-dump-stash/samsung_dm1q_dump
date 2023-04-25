@@ -1,0 +1,9 @@
+service kumihodecoder /system/bin/kumihodecoder
+    class core
+    user kumiho_dec
+    group kumiho_dec
+    ioprio rt 4
+    task_profiles HighPerformance ProcessCapacityHigh
+
+on property:persist.kumiho.disabled=true
+    stop kumihodecoder
