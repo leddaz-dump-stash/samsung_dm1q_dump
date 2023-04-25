@@ -1,0 +1,7 @@
+service mpostuiserv /vendor/bin/hw/vendor.samsung.hardware.tlc.mpos_tui@1.0-service
+    interface vendor.samsung.hardware.tlc.mpos_tui@1.0::ISehMposTui default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

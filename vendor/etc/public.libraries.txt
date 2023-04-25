@@ -1,0 +1,14 @@
+libAIMFISP.camera.samsung.so
+libAIMFISP_core.camera.samsung.so
+libAImode_wrapper.camera.samsung.so
+libAIphoto_core.camera.samsung.so
+libLocalTM_wrapper.camera.samsung.so
+libOpenCL.so
+libPersonal_capture.camera.samsung.so
+libTetraMFP10.camera.samsung.so
+libTetraMFP10Tuning.camera.samsung.so
+libadsprpc.so
+libcdsprpc.so
+libfastcvopt.so
+libqti-perfd-client.so
+libsdsprpc.so

@@ -1,0 +1,8 @@
+{
+    "version_id": "v1",
+    "tag" : "1.6",
+    "model_type" : "dsp",
+    "precision" : "qasymm8",
+    "compiler" : "",
+    "model_path" : "/vendor/etc/saiv/image_understanding/db/sm_segmenter/sm_segmenter_cnn.dlc"
+}

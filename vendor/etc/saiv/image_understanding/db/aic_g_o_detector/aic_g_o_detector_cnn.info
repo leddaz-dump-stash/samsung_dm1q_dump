@@ -1,0 +1,9 @@
+{
+	"version_id": "V2",
+	"tag" : "3.1",
+	"model_type" : "dsp",
+	"precision" : "qasymm8",
+	"latency" : "0",
+	"compiler" : "snpe-2.3.1.3811",
+	"model_path" : "/vendor/etc/saiv/image_understanding/db/aic_g_o_detector/aic_g_o_detector_cnn.dlc"
+}

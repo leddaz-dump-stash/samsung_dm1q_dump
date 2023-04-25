@@ -1,0 +1,29 @@
+service sec-camera-provider /vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
+    interface aidl android.hardware.camera.provider.ICameraProvider/internal/0
+    class hal
+    user cameraserver
+    group audio camera input drmrpc system media_rw sdcard_rw media vendor_secdir
+    ioprio rt 4
+    capabilities SYS_NICE
+    task_profiles HighPerformance CameraServiceCapacity
+
+on boot
+    mkdir /data/vendor/postprocess/ 0770 camera vendor_secdir
+    mkdir /data/vendor/postprocess/eraw/ 0770 camera vendor_secdir
+    mkdir /data/vendor/postprocess/native/ 0770 camera vendor_secdir
+    setprop vendor.camera.ppp.erawtid 0
+    setprop vendor.camera.ppp.nativetid 0
+    setprop vendor.camera.ppp.erawstart 0
+    setprop vendor.camera.ppp.nativestart 0
+
+on property:vendor.camera.ppp.erawstart=1
+    write /dev/cpuset/camera-daemon/cgroup.procs ${vendor.camera.ppp.erawtid}
+    write /dev/cpuctl/camera-daemon/cgroup.procs ${vendor.camera.ppp.erawtid}
+    write /dev/blkio/cgroup.procs ${vendor.camera.ppp.erawtid}
+    write /dev/freezer/cgroup.procs ${vendor.camera.ppp.erawtid}
+    
+on property:vendor.camera.ppp.nativestart=1
+    write /dev/cpuset/camera-daemon/cgroup.procs ${vendor.camera.ppp.nativetid}
+    write /dev/cpuctl/camera-daemon/cgroup.procs ${vendor.camera.ppp.nativetid}
+    write /dev/blkio/cgroup.procs ${vendor.camera.ppp.nativetid}
+    write /dev/freezer/cgroup.procs ${vendor.camera.ppp.nativetid}

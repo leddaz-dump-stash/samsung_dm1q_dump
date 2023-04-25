@@ -1,0 +1,9 @@
+ input                                                                       | output
+ dynamic shot mode                  | memory        | siop | camera | chip   | policy | dynamic shot mode                   | shot  | MMF/TNR
+ name                        | id   | min   | max   |      | dir    | vendor |        | name                         | id   | count | count  
+=============================+======+=======+=======+======+========+========+========+==============================+======+=======+========
+RAW_SR_MERGE                 , 160  , 0     , 500   , 0    , COMMON , COMMON , OFF    , RESERVED                     , -1   , 0     , 0
+HYBRID_LLHDR_MERGE           , 195  , 0     , 0     , 5    , REAR   , LSI    , LITE   , RESERVED                     , -1   , 0     , 5
+HYBRID_LLHDR_OIS_MERGE       , 196  , 0     , 0     , 5    , REAR   , LSI    , LITE   , RESERVED                     , -1   , 0     , 5
+HYBRID_LLHDR_QZ_LZ           , 197  , 0     , 0     , 5    , REAR   , QC     , LITE   , RESERVED                     , -1   , 0     , 5
+HYBRID_LLHDR_QOIS            , 198  , 0     , 0     , 5    , REAR   , QC     , LITE   , RESERVED                     , -1   , 0     , 5

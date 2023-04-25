@@ -1,0 +1,99 @@
+{
+    "config": {
+        "hw_platform": ["MTP"],
+        "soc_id": ["519", "536"]
+    },
+    "akmlib": {
+        "owner": "akmlib",
+        ".rotv": {
+            "owner": "akmlib",
+            ".config": {
+                "owner": "akmlib",
+                "config1": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "config2": {
+                    "ver": "0","type": "int","data": "0"
+                }
+            },
+            ".volatile": {
+                "owner": "akmlib",
+                "hdst": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "bias_x": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "bias_y": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "bias_z": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "href_x": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "href_y": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "href_z": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "hbase_x": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "hbase_y": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "hbase_z": {
+                    "ver": "0","type": "int","data": "0"
+                }
+            }
+        },
+        ".magcal": {
+            "owner": "akmlib",
+            ".config": {
+                "owner": "akmlib",
+                "config1": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "config2": {
+                    "ver": "0","type": "int","data": "0"
+                }
+            },
+            ".volatile": {
+                "owner": "akmlib",
+                "hdst": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "bias_x": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "bias_y": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "bias_z": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "href_x": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "href_y": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "href_z": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "hbase_x": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "hbase_y": {
+                    "ver": "0","type": "int","data": "0"
+                },
+                "hbase_z": {
+                    "ver": "0","type": "int","data": "0"
+                }
+            }
+        }
+    }
+}

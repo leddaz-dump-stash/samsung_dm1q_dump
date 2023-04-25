@@ -1,0 +1,10 @@
+{
+	"version_id": "v2",
+	"tag" : "2.3",
+	"model_type" : "dsp",
+	"precision" : "qasymm8",
+	"compiler" : "snpe2.4.1.3916",
+	"latency" : "0",
+	"model_path" : "/vendor/etc/saiv/image_understanding/db/af_segmenter/af_segmenter_cnn.dlc"
+}
+

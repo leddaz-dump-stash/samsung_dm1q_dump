@@ -1,0 +1,10 @@
+{
+	"version_id": "v2",
+	"tag" : "2.0",
+	"model_type" : "dsp",
+	"precision" : "qasymm8",
+	"compiler" : "snpe2.3.1.3794",
+	"latency" : "0",
+	"model_path" : "/vendor/etc/portrait_data/LF_segmenter/LF_segmenter_cnn.dlc"
+}
+

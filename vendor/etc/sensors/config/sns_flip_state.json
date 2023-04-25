@@ -1,0 +1,12 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM"],
+    "soc_id": ["356", "457", "482", "530", "519", "536"]
+  },
+  "sns_flip_state":{
+    "owner": "sns_flip_state",
+    "flip_state":{ "type": "int", "ver": "0",
+      "data": "0"
+    }
+  }
+}

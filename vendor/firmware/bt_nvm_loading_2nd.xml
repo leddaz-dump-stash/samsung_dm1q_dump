@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Tag count="6">
+	<!-- Chipset list supported in XML overriding -->
+		<!-- WCN3988 -->
+		<!-- CHEROKEE_VER_2_1 for MTP verification-->
+		<!-- WCN3991 -->
+		<!-- QCA6390 -->
+		<!-- WCN6850 -->
+		<!-- WCN6856 -->
+		<!-- WCN6856_2.1 -->
+	<Chipset value="WCN6856_2.1"/>	
+	<!-- describe project / target name -->
+	<Target value="DM1_GF"/>		
+	<!-- External Power Configuration -->
+	<Tag36>
+		<ChangeType type="default"/>
+		<!-- Length len="52"/ -->
+		<Length len="0"/>
+		<OffsetCount count="1"/>
+		<Offset>
+			<Offset0 value="12"/>
+		</Offset>
+		<ChangesCount count="1"/>
+		<Changes>
+			<!-- Hexadecimal value -->
+			<Changes0 value="0x00"/>
+		</Changes>
+	</Tag36>
+	<!-- Debug Control -->
+	<Tag38>
+		<ChangeType type="default"/>
+		<!-- Length len="0"/ -->
+		<Length len="88"/>
+		<OffsetCount count="1"/>
+		<Offset>
+			<Offset0 value="67"/>
+		</Offset>	
+		<ChangesCount count="1"/>
+		<Changes>
+			<!-- LE RSSI gain factor default 0 => use default value 0xAF/175 -->
+			<Changes0 value="0xA8"/>
+		</Changes>
+	</Tag38>
+	<!-- Radio Gain Setting -->
+	<Tag42>
+		<ChangeType type="default"/>
+		<!-- Length len="0"/ -->
+		<Length len="56"/>
+		<OffsetCount count="1"/>
+		<Offset>
+			<Offset0 value="46"/>
+		</Offset>	
+		<ChangesCount count="1"/>
+		<Changes>
+			<!-- BR/EDR RSSI gain factor B2(178,default.b9a) => AB(171, same with .bin) -->
+			<Changes0 value="0xAB"/>
+		</Changes>
+	</Tag42>
+	<!-- LE Tx Power Configuration -->
+	<Tag83>
+		<ChangeType type="default"/>
+		<!-- Length len="8"/ -->
+		<Length len="15"/>
+		<OffsetCount count="10"/>
+		<Offset>
+			<Offset0 value="0"/>
+			<Offset1 value="1"/>
+			<Offset2 value="2"/>
+			<Offset3 value="3"/>
+			<Offset4 value="7"/>
+			<Offset5 value="9"/>
+			<Offset6 value="10"/>
+			<Offset7 value="11"/>
+			<Offset8 value="12"/>
+			<Offset9 value="13"/>
+		</Offset>
+		<ChangesCount count="10"/>
+		<Changes>
+			<!-- Hexadecimal value -->
+			<!-- Advertising Power Level -->
+			<Changes0 value="0x09"/>
+			<!-- Scan Request Power Level -->
+			<Changes1 value="0x09"/>
+			<!-- Connection Power Level -->
+			<Changes2 value="0x09"/>
+			<!-- Broadcaster Power Level -->
+			<Changes3 value="0x09"/>
+			<!-- MultiAdv high Tx Power Level -->
+			<Changes4 value="0x09"/>
+			<!-- max PL individual phy enable -->
+			<Changes5 value="0x01"/>
+			<!-- 1M PHY max PL -->
+			<Changes6 value="0x0B"/>
+			<!-- 2M PHY max PL -->
+			<Changes7 value="0x0B"/>
+			<!-- 125k coded phy max PL -->
+			<Changes8 value="0x09"/>
+			<!-- 500k coded phy max PL -->
+			<Changes9 value="0x09"/>
+		</Changes>
+	</Tag83>
+	<!-- Channel Calibration -->
+	<!-- It needs to be parsed entire data for Tag87 -->
+	<Tag87>
+		<!-- ChangeType type="entire" means that entire data of the NVM tag will be overwritten -->
+		<ChangeType type="entire"/>
+		<!-- Length len="80"/ -->
+		<Length len="80"/>
+		<OffsetCount count="80"/>
+		<ChangesCount count="80"/>
+		<Changes>
+			0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+			0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+			0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,
+			0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,,
+		</Changes>
+	</Tag87>
+	<!-- SAR backoff index -->
+	<Tag204>
+		<ChangeType type="default"/>
+		<Length len="13"/>
+		<OffsetCount count="4"/>
+		<Offset>
+	<!-- SAR backoff disable -->
+			<Offset0 value="1"/>
+	<!-- SAR backoff Head enabled -->
+			<Offset1 value="2"/>
+	<!-- SAR backoff NR_only enabled -->
+			<Offset2 value="3"/>
+	<!-- SAR backoff wifi only enabled -->
+			<Offset3 value="5"/>
+		</Offset>
+		<ChangesCount count="4"/>
+		<Changes>
+			<!-- Hexadecimal value/ 0.25dBm unit  0x50 : 20dBm, 0x28: 10dBm  -->
+			<Changes0 value="0x50"/>
+			<Changes1 value="0x3c"/>
+			<Changes2 value="0x50"/>
+			<Changes3 value="0x50"/>			
+		</Changes>
+	</Tag204>
+</Tag>

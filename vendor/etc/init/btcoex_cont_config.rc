@@ -1,0 +1,12 @@
+# btcoex_cont_config rc file
+
+service btcoex_cont_config /vendor/bin/btcoex_cont_config
+    class main
+    user system
+    group system wifi net_raw net_admin inet
+    capabilities NET_ADMIN NET_RAW
+    disabled
+    oneshot
+
+on property:wlan.driver.status=ok
+    start btcoex_cont_config

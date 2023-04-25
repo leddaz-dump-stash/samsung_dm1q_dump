@@ -1,0 +1,10 @@
+{
+	"version_id": "v1",
+	"tag" : "1.4",
+	"model_type" : "dsp",
+	"precision" : "qasymm8",
+	"compiler" : "snpe2.4.1",
+	"latency" : "0",
+	"model_path" : "/vendor/etc/saiv/image_understanding/db/awb_segmenter/awb_segmenter_cnn.dlc"
+}
+

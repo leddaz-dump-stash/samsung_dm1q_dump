@@ -1,0 +1,7 @@
+service vendor.frcmc-hal /vendor/bin/hw/vendor.samsung.hardware.frcmc-service
+interface aidl vendor.samsung.hardware.frcmc.ISehFrcMc/default
+oneshot
+disabled
+class hal
+user system
+group system

@@ -1,0 +1,10 @@
+# For Sensordebug in *#31597#
+
+service vendor-sensordebug-sh /vendor/bin/init.vendor.sensordebug.sh
+    user system
+    group system
+    oneshot
+    disabled
+
+on property:sys.sensordebug_enable=true
+    start vendor-sensordebug-sh

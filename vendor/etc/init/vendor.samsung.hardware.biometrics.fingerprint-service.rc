@@ -1,0 +1,6 @@
+service vendor.fingerprint-default /vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service
+    # class hal
+    class late_start
+    user system
+    group system input
+
